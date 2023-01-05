@@ -12,11 +12,7 @@ class Result(private val mainActivity: MainActivity) {
         operation = operation.replace(Regex("×"), "*")
         return operation
     }
-<<<<<<< HEAD
-//showResult
-=======
 
->>>>>>> 25c6e76 (Final Commi)
     fun showResult(resultShow: TextView) {
         try {
             val expression = getInputOperation()

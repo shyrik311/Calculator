@@ -15,8 +15,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setListeners()
+    }
 
-
+    private fun setListeners() {
         clear_all.setOnClickListener {
             work_space.text = ""
             result_show.text = ""
